@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Range Slider</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owlTheme.css">
+    <link rel="stylesheet" href="css/owlSettings.css">
+
+</head>
+
+<body>
+    <h2 class="ce_headline text-center m-5">Range Slider</h2>
+
+    <p class="text-center mb-5">Owl Carousel 2 JS with range</p>
+
+    <div class="mod_article owl-carousel-wrapper block">
+        <div id="vue-history" class="container-fluid pt-4 pb-4">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-history owl-carousel owl-theme">
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>1991</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>1993</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>1997</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>1998</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>1998</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>1998</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="ce_text col-sm-24 block">
+                            <figure class="image_container float_above">
+                                <img src="img/random.jpg" width="800" height="600" alt="" itemprop="image">
+                            </figure>
+                            <h5>199i</h5>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-right">
+                        <div class="slider-container">
+                            <!--<span class="slider-value">0</span> -->
+                            <!--<button class="back-me btn btn-primary btn-sm">Prev</button>-->
+                            <input class="range-slider custom-range" type="range" id="range" value="0" name="range" min="0" step="1" :max="count">
+<!--                             <p>${count}</p>
+							<p>${window.width}</p> -->
+                            <!--<button class="go-me btn btn-primary btn-sm">Next</button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+    <script type="text/javascript" src="js/rangeVue.js"></script>
+    <script type="text/javascript" src="js/owlSettingsJquery.js"></script>
+
+</html>
